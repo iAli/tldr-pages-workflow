@@ -1,0 +1,22 @@
+# nagios3
+
+> Legacy host/service/networking monitoring program.
+> Note: This command is deprecated, use `nagios4` instead.
+> See also: `nagios`, `nagios2`, `nagios4`.
+> More information: <https://manned.org/nagios>.
+
+- Start `nagios3`:
+
+`nagios3 /etc/nagios3/nagios.cfg`
+
+- Start `nagios3` in daemon mode:
+
+`nagios3 -d`
+
+- Start `nagios3`, print service check scheduling information to `stdout`, then shut down:
+
+`nagios3 -s`
+
+- Verify configuration file:
+
+`nagios3 -v`

@@ -1,0 +1,21 @@
+# host
+
+> Look up Domain Name Server.
+> See also: `dig`, `resolvectl`, `nslookup`.
+> More information: <https://manned.org/host>.
+
+- Look up A, AAAA, and MX records of a domain:
+
+`host {{domain}}`
+
+- Look up a field (CNAME, TXT, ...) of a domain:
+
+`host -t {{field}} {{domain}}`
+
+- Reverse lookup an IP:
+
+`host {{ip_address}}`
+
+- Specify an alternate DNS server to query:
+
+`host {{domain}} {{8.8.8.8}}`

@@ -1,0 +1,16 @@
+# iex
+
+> Interactive shell for Elixir.
+> More information: <https://manned.org/iex>.
+
+- Start an interactive session:
+
+`iex`
+
+- Start a session that remembers history:
+
+`iex --erl "-kernel shell_history enabled"`
+
+- Start and load Mix project files:
+
+`iex -S mix`

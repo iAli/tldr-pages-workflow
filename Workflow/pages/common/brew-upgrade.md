@@ -1,0 +1,20 @@
+# brew upgrade
+
+> Upgrade outdated formulae and casks.
+> More information: <https://docs.brew.sh/Manpage#upgrade-options-installed_formulainstalled_cask->.
+
+- Upgrade all outdated casks and formulae:
+
+`brew upgrade`
+
+- Upgrade a specific formula/cask:
+
+`brew upgrade {{formula|cask}}`
+
+- Simulate an upgrade, printing what would be upgraded:
+
+`brew upgrade {{[-n|--dry-run]}}`
+
+- Upgrade all outdated packages without asking for confirmation:
+
+`brew upgrade {{[-y|--yes]}}`

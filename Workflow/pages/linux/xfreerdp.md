@@ -1,0 +1,32 @@
+# xfreerdp
+
+> Free Remote Desktop Protocol implementation.
+> More information: <https://github.com/FreeRDP/FreeRDP/wiki/CommandLineInterface-(possibly-not-up-to-date,-check-application-help-text-for-most-up-to-date-version)>.
+
+- Connect to a FreeRDP server:
+
+`xfreerdp /u:{{username}} /p:{{password}} /v:{{host}}`
+
+- Connect to a FreeRDP server with a custom window width and height:
+
+`xfreerdp /v:{{host}} /u:{{username}} /p:{{password}} /w:{{width_in_pixels}} /h:{{height_in_pixels}}`
+
+- Connect to a FreeRDP server with dynamic resolution:
+
+`xfreerdp /v:{{host}} /u:{{username}} /p:{{password}} /dynamic-resolution`
+
+- Connect to a FreeRDP server with clipboard redirection:
+
+`xfreerdp /v:{{host}} /u:{{username}} /p:{{password}} +clipboard`
+
+- Connect to a FreeRDP server ignoring any certificate checks:
+
+`xfreerdp /v:{{host}} /u:{{username}} /p:{{password}} /cert:ignore`
+
+- Connect to a FreeRDP server with a shared directory:
+
+`xfreerdp /v:{{host}} /u:{{username}} /p:{{password}} /drive:{{path/to/directory}},{{share_name}}`
+
+- Connect to a FreeRDP server and activate audio output redirection using `sys:alsa` device:
+
+`xfreerdp /u:{{username}} /p:{{password}} /v:{{host}} /sound:{{sys:alsa}}`

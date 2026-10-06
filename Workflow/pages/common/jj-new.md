@@ -1,0 +1,20 @@
+# jj new
+
+> Create a new empty change.
+> More information: <https://docs.jj-vcs.dev/latest/cli-reference/#jj-new>.
+
+- Create a new empty change on top of current revision:
+
+`jj new`
+
+- Create a new empty change on top of specific revision:
+
+`jj new {{revision}}`
+
+- Create a new merge change on top of multiple revisions:
+
+`jj new {{revset1 revset2 ...}}`
+
+- Insert a new empty change between specified revisions:
+
+`jj new {{[-A|--insert-after]}} {{revsets}} {{[-B|--insert-before]}} {{revsets}}`
